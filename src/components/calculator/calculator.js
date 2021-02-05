@@ -1,4 +1,4 @@
-import { createElement } from "../../components/calculator/utils";
+import { createElement } from "../utils/createElement";
 
 export function createCalculator() {
   const upperDisplay = createElement("input", {
@@ -12,70 +12,70 @@ export function createCalculator() {
     innerText: "1",
     onclick: function () {
       //Line needs to be Fixed! Line does not express what we had in mind-philipp
-      upperDisplay.value = Number(upperDisplay.value) = 1;
+      upperDisplay.value = upperDisplay.value = 1;
     },
   });
 
   const numberFieldTwo = createElement("button", {
     innerText: "2",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 2;
+      upperDisplay.value = upperDisplay.value = 2;
     },
   });
 
   const numberFieldThree = createElement("button", {
     innerText: "3",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 3;
+      upperDisplay.value = upperDisplay.value = 3;
     },
   });
 
   const numberFieldFour = createElement("button", {
     innerText: "4",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 4;
+      upperDisplay.value = upperDisplay.value = 4;
     },
   });
 
   const numberFieldFive = createElement("button", {
     innerText: "5",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 5;
+      upperDisplay.value = upperDisplay.value = 5;
     },
   });
 
   const numberFieldSix = createElement("button", {
     innerText: "6",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 6;
+      upperDisplay.value = upperDisplay.value = 6;
     },
   });
 
   const numberFieldSeven = createElement("button", {
     innerText: "7",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 7;
+      upperDisplay.value = upperDisplay.value = 7;
     },
   });
 
   const numberFieldEight = createElement("button", {
     innerText: "8",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 8;
+      upperDisplay.value = upperDisplay.value = 8;
     },
   });
 
   const numberFieldNine = createElement("button", {
     innerText: "9",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 9;
+      upperDisplay.value = upperDisplay.value = 9;
     },
   });
 
   const numberFieldZero = createElement("button", {
     innerText: "0",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 0;
+      upperDisplay.value = upperDisplay.value = 0;
     },
   });
 
@@ -84,27 +84,70 @@ export function createCalculator() {
   const result = createElement("button", {
     innerText: "=",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 1;
+      upperDisplay.value = upperDisplay.value = 1;
     },
   });
 
   const reset = createElement("button", {
     innerText: "C",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 0;
+      upperDisplay.value = upperDisplay.value = 0;
     },
   });
 
-  const addButton = createElement("button", {
+  const PlusButton = createElement("button", {
     innerText: "+",
     onclick: function () {
-      upperDisplay.value = Number(upperDisplay.value) = 1;
+      upperDisplay.value = upperDisplay.value = 1;
     },
+  });
+
+  const MinusButton = createElement("button", {
+    innerText: "-",
+    onclick: function () {
+      upperDisplay.value = upperDisplay.value = 1;
+    },
+  });
+
+  const MultiButton = createElement("button", {
+    innerText: "x",
+    onclick: function () {
+      upperDisplay.value = upperDisplay.value = 1;
+    },
+  });
+
+  const DivideButton = createElement("button", {
+    innerText: "÷",
+    onclick: function () {
+      upperDisplay.value = upperDisplay.value = 1;
+    },
+  });
+
+  return createElement("div", {
+    className: "calculator",
+    children: [
+      numberFieldOne,
+      numberFieldTwo,
+      numberFieldThree,
+      numberFieldFour,
+      numberFieldFive,
+      numberFieldSix,
+      numberFieldSeven,
+      numberFieldEight,
+      numberFieldNine,
+      numberFieldZero,
+      upperDisplay,
+      result,
+      reset,
+      PlusButton,
+      MinusButton,
+      DivideButton,
+      MultiButton,
+    ],
   });
 }
 
-{
-  /* <input ="upper display"></input>
+/* <input ="upper display"></input>
 
 <div class="Number-Field">
 <button class="Number">1</button>
@@ -132,4 +175,3 @@ export function createCalculator() {
 </div>
  
  */
-}
