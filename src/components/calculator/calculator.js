@@ -11,6 +11,7 @@ export function createCalculator() {
 
   const numberFieldOne = createElement("button", {
     innerText: "1",
+    className: "numberButton",
     onclick: function () {
       //Line needs to be Fixed! Line does not express what we had in mind-philipp
       upperDisplay.value = upperDisplay.value += 1;
@@ -19,6 +20,7 @@ export function createCalculator() {
 
   const numberFieldTwo = createElement("button", {
     innerText: "2",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 2;
     },
@@ -26,6 +28,7 @@ export function createCalculator() {
 
   const numberFieldThree = createElement("button", {
     innerText: "3",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 3;
     },
@@ -33,6 +36,7 @@ export function createCalculator() {
 
   const numberFieldFour = createElement("button", {
     innerText: "4",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 4;
     },
@@ -40,6 +44,7 @@ export function createCalculator() {
 
   const numberFieldFive = createElement("button", {
     innerText: "5",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 5;
     },
@@ -47,6 +52,7 @@ export function createCalculator() {
 
   const numberFieldSix = createElement("button", {
     innerText: "6",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 6;
     },
@@ -54,6 +60,7 @@ export function createCalculator() {
 
   const numberFieldSeven = createElement("button", {
     innerText: "7",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 7;
     },
@@ -61,6 +68,7 @@ export function createCalculator() {
 
   const numberFieldEight = createElement("button", {
     innerText: "8",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 8;
     },
@@ -68,6 +76,7 @@ export function createCalculator() {
 
   const numberFieldNine = createElement("button", {
     innerText: "9",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 9;
     },
@@ -75,6 +84,7 @@ export function createCalculator() {
 
   const numberFieldZero = createElement("button", {
     innerText: "0",
+    className: "numberButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += 0;
     },
@@ -84,6 +94,7 @@ export function createCalculator() {
 
   const result = createElement("button", {
     innerText: "=",
+    className: "operationButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value = 1;
     },
@@ -91,6 +102,7 @@ export function createCalculator() {
 
   const reset = createElement("button", {
     innerText: "C",
+    className: "operationButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value = "";
     },
@@ -98,6 +110,7 @@ export function createCalculator() {
 
   const PlusButton = createElement("button", {
     innerText: "+",
+    className: "functionButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += "+";
     },
@@ -105,6 +118,7 @@ export function createCalculator() {
 
   const MinusButton = createElement("button", {
     innerText: "-",
+    className: "functionButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += "-";
     },
@@ -112,6 +126,7 @@ export function createCalculator() {
 
   const MultiButton = createElement("button", {
     innerText: "x",
+    className: "functionButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += "x";
     },
@@ -119,6 +134,7 @@ export function createCalculator() {
 
   const DivideButton = createElement("button", {
     innerText: "÷",
+    className: "functionButton",
     onclick: function () {
       upperDisplay.value = upperDisplay.value += "÷";
     },

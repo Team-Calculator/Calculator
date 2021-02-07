@@ -1,5 +1,5 @@
 .calculator {
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
   border: slategray solid 3px;
   border-radius: 10px;
   padding: 15px;
@@ -7,8 +7,8 @@
 }
 
 button {
-  color: rgb(0, 0, 0);
-  font-size: larger;
+  color: rgb(255, 245, 245);
+  font-size: 14pt;
   padding: 20px;
   border-radius: 10px;
   margin: 5px;
@@ -17,5 +17,35 @@ button {
 input {
   height: 85px;
   width: 255px;
+  margin-bottom: 20px;
   border-radius: 10px;
+  font-size: 50px;
+  text-align: right;
+  color: #747474;
+  /* font-family: "DS-DIGI"; */
+}
+
+.operationButton {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+}
+
+.numberButton {
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+  color: white;
+}
+
+.functionButton {
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
