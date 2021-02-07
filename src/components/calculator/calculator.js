@@ -96,7 +96,7 @@ export function createCalculator() {
     innerText: "=",
     className: "operationButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value = 1;
+      upperDisplay.value = upperDisplay.value = 42;
     },
   });
 
