@@ -127,6 +127,7 @@ export function createCalculator() {
   return createElement("div", {
     className: "calculator",
     children: [
+      upperDisplay,
       numberFieldOne,
       numberFieldTwo,
       numberFieldThree,
@@ -137,7 +138,7 @@ export function createCalculator() {
       numberFieldEight,
       numberFieldNine,
       numberFieldZero,
-      upperDisplay,
+
       result,
       reset,
       PlusButton,
