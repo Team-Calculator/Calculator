@@ -14,7 +14,7 @@ export function createCalculator() {
     className: "numberButton",
     onclick: function () {
       //Line needs to be Fixed! Line does not express what we had in mind-philipp
-      upperDisplay.value = upperDisplay.value += 1;
+      upperDisplay.value += 1;
     },
   });
 
@@ -22,7 +22,7 @@ export function createCalculator() {
     innerText: "2",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 2;
+      upperDisplay.value += 2;
     },
   });
 
@@ -30,7 +30,7 @@ export function createCalculator() {
     innerText: "3",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 3;
+      upperDisplay.value += 3;
     },
   });
 
@@ -38,7 +38,7 @@ export function createCalculator() {
     innerText: "4",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 4;
+      upperDisplay.value += 4;
     },
   });
 
@@ -46,7 +46,7 @@ export function createCalculator() {
     innerText: "5",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 5;
+      upperDisplay.value += 5;
     },
   });
 
@@ -54,7 +54,7 @@ export function createCalculator() {
     innerText: "6",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 6;
+      upperDisplay.value += 6;
     },
   });
 
@@ -62,7 +62,7 @@ export function createCalculator() {
     innerText: "7",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 7;
+      upperDisplay.value += 7;
     },
   });
 
@@ -70,7 +70,7 @@ export function createCalculator() {
     innerText: "8",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 8;
+      upperDisplay.value += 8;
     },
   });
 
@@ -78,7 +78,7 @@ export function createCalculator() {
     innerText: "9",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 9;
+      upperDisplay.value += 9;
     },
   });
 
@@ -86,57 +86,57 @@ export function createCalculator() {
     innerText: "0",
     className: "numberButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += 0;
+      upperDisplay.value += 0;
     },
   });
 
   //numbers end here!!!!!!!!!!!!!!!!!
 
-  const result = createElement("button", {
+  const resultButton = createElement("button", {
     innerText: "=",
     className: "operationButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value = 42;
+      upperDisplay.value = 42;
     },
   });
 
-  const reset = createElement("button", {
+  const resetButton = createElement("button", {
     innerText: "C",
     className: "operationButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value = "";
+      upperDisplay.value = "";
     },
   });
 
-  const PlusButton = createElement("button", {
+  const plusButton = createElement("button", {
     innerText: "+",
     className: "functionButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += "+";
+      upperDisplay.value += "+";
     },
   });
 
-  const MinusButton = createElement("button", {
+  const minusButton = createElement("button", {
     innerText: "-",
     className: "functionButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += "-";
+      upperDisplay.value += "-";
     },
   });
 
-  const MultiButton = createElement("button", {
+  const multiButton = createElement("button", {
     innerText: "x",
     className: "functionButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += "x";
+      upperDisplay.value += "x";
     },
   });
 
-  const DivideButton = createElement("button", {
+  const divideButton = createElement("button", {
     innerText: "÷",
     className: "functionButton",
     onclick: function () {
-      upperDisplay.value = upperDisplay.value += "÷";
+      upperDisplay.value += "÷";
     },
   });
 
@@ -155,12 +155,12 @@ export function createCalculator() {
       numberFieldNine,
       numberFieldZero,
 
-      result,
-      reset,
-      PlusButton,
-      MinusButton,
-      DivideButton,
-      MultiButton,
+      resultButton,
+      resetButton,
+      plusButton,
+      minusButton,
+      divideButton,
+      multiButton,
     ],
   });
 }
